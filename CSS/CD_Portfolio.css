@@ -1,0 +1,153 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+  @font-face {
+    font-family: 'cooper_blackregular';
+    src: url('Fonts/coopbl-webfont.eot');
+    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/coopbl-webfont.woff') format('woff'),
+         url('Fonts/coopbl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+*********************************
+Website Name: Personal Website
+Website Author: Cole Dennie
+Copyright: 2023 - All Rights Reserved
+
+***********************************
+=================
+Table Of Contents
+=================
+1. Header Information
+2. Nav Information
+3. Body Information
+
+***********************************/
+
+
+
+/*** 
+Header Information
+____________________________________________*/
+header {
+    background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
+    height: 120px;
+}
+
+header > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 120px;
+}
+
+
+/*** 
+Nav Information
+____________________________________________*/
+
+.navBar {
+    background-color: black;
+}
+li {
+    display: inline;
+}
+a { 
+    padding-left: 20px;
+    padding-right: 50px;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 207, 200);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+/*** 
+Body Information
+____________________________________________*/
+
+body {
+    background: rgb(214,152,104);
+    background: linear-gradient(270deg, rgba(214,152,104,1) 0%, rgba(157,72,44,1) 100%);
+    
+}
+main {
+    background-image: url("Images/BackgroundPortfolio.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+main > h2 {
+    font-family: cooper_blackregular;
+    color: white;
+    font-size: 66px;
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 3px 3px black;
+}
+
+/* Update to display categories vertically */
+.navCategories {
+    display: block;
+    margin-bottom: 10px; /* Add space between vertical items */
+}
+
+a.navCategories {
+    padding: 10px 0; /* Adjust vertical padding */
+    display: block;
+}
+
+.ProjectShowcase {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 1200px;
+}
+
+.ProjectShowcase > ul {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.ProjectImage {
+    height: 240px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+
+.ProjectImage:hover{  
+    transform: scale(1.3);
+}
+
+
+
+@media (max-width: 1140px) {
+
+    .ProjectShowcase > ul {
+        width: 980px;
+
+
+    }
+    .ProjectImage {
+        height: 270px;
+        transition: 0.3s;
+    }
+    }
+
+    @media (max-width: 980px) {
+
+        .ProjectShowcase > ul {
+            width: 100%;
+        }
+        .ProjectImage {
+            height: 470px;
+            transition: 0.3s;
+        }
+        }

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @font-face {
+    font-family: 'cooper_blackregular';
+    src: url('Fonts/coopbl-webfont.eot');
+    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/coopbl-webfont.woff') format('woff'),
+         url('Fonts/coopbl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+*********************************
+Website Name: Personal Website
+Website Author: Cole Dennie
+Copyright: 2023 - All Rights Reserved
+
+***********************************
+=================
+Table Of Contents
+=================
+1. Header Information
+2. Nav Information
+3. Body Information
+
+***********************************/
+
+
+
+/*** 
+Header Information
+____________________________________________*/
+header {
+    background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
+    height: 120px;
+}
+
+header > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 120px;
+}
+
+/*** 
+Nav Information
+____________________________________________*/
+
+.navBar {
+    background-color: black;
+}
+li {
+    display: inline;
+}
+a { 
+    padding-left: 20px;
+    padding-right: 50px;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 207, 200);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+
+
+/*** 
+Body Information
+____________________________________________*/
+body {
+    background: rgb(142,41,36);
+    background: linear-gradient(90deg, rgba(142,41,36,1) 0%, rgba(188,132,94,1) 100%);
+}
+
+
+
+article > h2 {
+    text-align: center;
+    font-family: cooper_blackregular;
+    color: white;
+    font-size: 66px;
+    padding-top: 10px;
+    text-shadow: 3px 3px black;
+}
+
+article {
+    background-image: url("Images/BG2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+main {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 1200px;
+}
+
+
+article p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 1.2;
+
+}
+
+
+
+
+@media (max-width: 1050px) {
+    article {
+        width: 90%;
+        margin: none;
+        padding: 40px;
+    }
+    article p {
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+
+        line-height: 1;
+    
+    }
+    }

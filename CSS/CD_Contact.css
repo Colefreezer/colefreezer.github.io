@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @font-face {
+    font-family: 'cooper_blackregular';
+    src: url('Fonts/coopbl-webfont.eot');
+    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/coopbl-webfont.woff') format('woff'),
+         url('Fonts/coopbl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+*********************************
+Website Name: Personal Website
+Website Author: Cole Dennie
+Copyright: 2023 - All Rights Reserved
+
+***********************************
+=================
+Table Of Contents
+=================
+1. Header Information
+2. Body Information
+3. Column 1 Information
+4. Column 2 Information
+5. Column 3 Information
+5. Footer Information
+
+***********************************/
+
+
+/*** 
+Header Information
+____________________________________________*/
+
+/*** 
+Header Information
+____________________________________________*/
+header {
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
+    
+}
+
+header > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 100%;
+    
+}
+
+
+/*** 
+Nav Information
+____________________________________________*/
+
+.navBar {
+    background-color: black;
+}
+li {
+    display: inline;
+}
+a { 
+    padding-left: 20px;
+    padding-right: 50px;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 207, 200);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+/*** 
+Body Information
+____________________________________________*/
+
+body {
+    background-color: black;
+    
+}
+
+aside {
+    float: right;
+    background-image: url("Images/ContactImage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 700px;
+    width: 40%;
+}
+
+form {
+    width: 49%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 70px;
+    border-radius: 18px;
+    background: white;
+}
+
+textarea {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 70px;
+    border-radius: 18px;
+    background: white;
+}
+
+label::after{
+    content: " *";
+    color: red;
+    }
+
+.left {
+    padding-right: 20px;
+    width: 45%;
+    float: left;
+}
+.right {
+    width: 48%;
+    float: right;
+}
+
+.submitButton {
+    background-color: #EDBB98;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-style: normal;
+    transition: 0.2s;
+    
+}
+
+.submitButton:hover {
+    transform: scaleY(1.4);
+    background-color: #ffd6b9;
+    font-size: 43px;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+}
+
+
+
+@media screen and (max-width: 990px){
+    aside {
+        float: none;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    
+    
+}
+
+
+
+
+

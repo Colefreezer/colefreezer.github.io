@@ -1,0 +1,211 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @font-face {
+    font-family: 'cooper_blackregular';
+    src: url('Fonts/coopbl-webfont.eot');
+    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/coopbl-webfont.woff') format('woff'),
+         url('Fonts/coopbl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+*********************************
+Website Name: Personal Website
+Website Author: Cole Dennie
+Copyright: 2023 - All Rights Reserved
+
+***********************************
+=================
+Table Of Contents
+=================
+1. Header Information
+2. Nav Information
+3. Body Information
+4. Lower Body Information
+
+***********************************/
+
+
+
+/*** 
+Header Information
+____________________________________________*/
+header {
+    background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
+    height: 120px;
+    width: 100%;
+}
+
+header > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 120px;
+}
+
+
+/*** 
+Nav Information
+____________________________________________*/
+
+.navBar {
+    background-color: black;
+}
+li {
+    display: inline;
+}
+a { 
+    padding-left: 20px;
+    padding-right: 50px;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+a:hover {
+    color: rgb(255, 207, 200);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    
+    
+}
+
+aside {
+    height: 650px;
+    background-image: url("Images/UIAside.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+aside h1 {
+    color: white;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-weight:bold;
+    margin-left: 20px;
+}
+
+aside p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 43px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+aside img {
+    width: 400px;
+}
+
+body {
+    background-image: url("Images/BackgroundMain.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: black;
+}
+
+
+/*** 
+Lower Body Information
+____________________________________________*/
+.divider {
+    background: rgb(255,66,42);
+    background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
+    height: 120px;
+}
+.divider > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 120px;
+}
+
+
+.lower {
+    background-color: black;
+    height: 600px;
+
+}
+
+#BottomText p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    padding: 40px;
+    line-height: 1.2;
+    width: 100%;
+}
+
+#BottomText {
+    background-image: url("Images/BG1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    width: 890px;
+    margin-left: 70px;
+}
+
+
+article > img {
+    float: right;
+    width: 400px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+article > h2 {
+    text-align: center;
+    font-family: cooper_blackregular;
+    color: white;
+    font-size: 66px;
+    padding-top: 10px;
+    text-shadow: 3px 3px black;
+}
+
+
+
+
+
+
+@media (max-width: 1430px) {
+    #BottomText p {
+        font-size: 35px;
+        font-style: italic;
+        padding: 0px;
+        line-height: 1;
+        width: 100%;
+    }
+    #BottomText {
+        background-image: none;
+        float: none;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    article > img {
+        float: none;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    body {
+        background-image: url("Images/BackgroundMain.png");
+        background-repeat: no-repeat;
+        background-size: auto 60%;
+        background-color: black;
+    }
+}
+    
+    
+
