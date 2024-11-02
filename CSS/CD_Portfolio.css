@@ -125,11 +125,11 @@ body {
 .imageGallery img {
     width: 100%;
     height: auto;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .imageGallery img:hover{  
-    transform: scale(2);
+    transform: scale(1.8);
 }
 
 
