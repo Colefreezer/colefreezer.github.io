@@ -79,8 +79,6 @@ body {
 }
 
 
-
-
 /* Style for the navigation section */
 .navSection {
     display: flex;
@@ -110,7 +108,26 @@ body {
     background-color: #E58638;
     font-family: 'Oswald', sans-serif;
     font-size: 200%;
+    color: black;
+    transition: 0.2s;
 }
+    
+.navCategory:hover {   
+    transform: scaleY(1.4);
+    background-color: #ffd6b9;  
+    font-size: 43px;  
+    font-weight: bolder; 
+    letter-spacing: 0.2em;
+}
+
+
+
+.active {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 1), 1px -1px 0 rgba(0, 0, 0, 1), -1px 1px 0 rgba(0, 0, 0, 1), 1px 1px 0 rgba(0, 0, 0, 1);
+}
+
 
 /* Gallery styles */
 .imageGallery {
@@ -131,6 +148,8 @@ body {
 .imageGallery img:hover{  
     transform: scale(1.8);
 }
+
+
 
 
 

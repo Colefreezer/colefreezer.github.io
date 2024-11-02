@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="CSS/myersReset.css">
     <link rel="stylesheet" href="CSS/CD_Portfolio.css">
     <script src="CSS/portfolioDisplay.js"></script>
+    <script>
+    // Automatically show the "Games" gallery on page load
+    window.onload = function() {
+        showGallery('Games');
+    };
+</script>
+
 </head>
 <body>
     <header>
@@ -27,11 +34,11 @@
             
         </div>
         <div class="navSection">
-            <ul  class="ulSection">
+            <ul class="ulSection">
                 <li class="navCategory" onclick="showGallery('Games')">Games</li>
                 <li class="navCategory" onclick="showGallery('Art')">Art</li>
                 <li class="navCategory" onclick="showGallery('SpriteArt')">Sprite Art</li>
-                <li class="navCategory" onclick="showGallery('3DModels')">3D Models</li>
+                <li class="navCategory" onclick="showGallery('Models')">Models</li>
             </ul>
         </div>
         
