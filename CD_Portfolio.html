@@ -5,7 +5,7 @@
     <title>Cole Dennie</title>
     <link rel="stylesheet" href="CSS/myersReset.css">
     <link rel="stylesheet" href="CSS/CD_Portfolio.css">
-    
+    <script src="CSS/portfolioDisplay.js"></script>
 </head>
 <body>
     <header>
@@ -23,31 +23,17 @@
         </nav>
     </div>
     <main>
-        <h2>PORTFOLIO</h2>
-        <div class="ProjectShowcase">
-            <ul>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project1.png" alt="Heartsick">
-                </li>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project2.png" alt="Heartsick: Homecoming">
-                </li>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project3.png" alt="Analog">
-                </li>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project4.png" alt="Heartsick: Rush">
-                </li>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project5.png" alt="Hyperlooper">
-                </li>
-                <li>
-                    <img class="ProjectImage" src="CSS/Images/Portfolio/Project6.png" alt="Kernal Panic">
-                </li>
+        <div class="imageGallery" id="imageGallery">
+            
+        </div>
+        <div class="navSection">
+            <ul  class="ulSection">
+                <li class="navCategory" onclick="showGallery('Games')">Games</li>
+                <li class="navCategory" onclick="showGallery('Art')">Art</li>
+                <li class="navCategory" onclick="showGallery('SpriteArt')">Sprite Art</li>
+                <li class="navCategory" onclick="showGallery('3DModels')">3D Models</li>
             </ul>
         </div>
-
-
         
     </main>
     

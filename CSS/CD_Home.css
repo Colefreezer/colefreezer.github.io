@@ -35,7 +35,10 @@ header {
     background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
     height: 120px;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
+
 
 header > img {
     margin-right: auto;
@@ -51,6 +54,8 @@ ____________________________________________*/
 
 .navBar {
     background-color: black;
+    position: relative;
+    z-index: 1;
 }
 li {
     display: inline;
@@ -80,6 +85,9 @@ aside {
     background-image: url("Images/UIAside.png");
     background-size: contain;
     background-repeat: no-repeat;
+    width: 30%;
+    position: relative;
+    z-index: 1;
 }
 
 aside h1 {
@@ -107,11 +115,28 @@ aside img {
 }
 
 body {
-    background-image: url("Images/BackgroundMain.png");
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 40%;
     background-color: black;
 }
+
+.photoSection {
+    height: 650px;
+    width: 100%;
+    background-image: url("Images/Display/Display1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 170px;
+    left: 300px;
+    z-index: 0;
+    transition: background-image 1s ease-in-out;
+}
+
+
+.photoSection.swipe-animation {
+    transition: background-image 1s ease-in-out;
+  }
 
 
 /*** 
@@ -132,35 +157,8 @@ ____________________________________________*/
 
 .lower {
     background-color: black;
-    height: 600px;
+    height: 800px;
 
-}
-
-#BottomText p {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 35px;
-    font-style: italic;
-    padding: 40px;
-    line-height: 1.2;
-    width: 100%;
-}
-
-#BottomText {
-    background-image: url("Images/BG1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: left;
-    width: 890px;
-    margin-left: 70px;
-}
-
-
-article > img {
-    float: right;
-    width: 400px;
-    margin-right: 70px;
-    margin-top: 30px;
 }
 
 article > h2 {
@@ -171,6 +169,44 @@ article > h2 {
     padding-top: 10px;
     text-shadow: 3px 3px black;
 }
+
+.SkillShowcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+}
+
+    .Skill img {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .Skill h1 {
+        font-family: 'Oswald', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        margin: 10px 0;
+    }
+
+    .Skill p {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
 
 
 
