@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+﻿  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
   @font-face {
     font-family: 'cooper_blackregular';
     src: url('Fonts/coopbl-webfont.eot');
@@ -137,20 +137,205 @@ body {
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
+    
 }
 
-.imageGallery img {
-    width: 100%;
-    height: auto;
-    transition: 0.1s ease-in-out;
+    .imageGallery img {
+        width: 100%;
+        height: auto;
+        transition: 0.1s ease-in-out;
+        z-index: 1;
+    }
+
+        
+
+
+
+/* Container for each game image and its description */
+.imageContainer {
+    display: flex;
+    align-items: center;
+
 }
 
-.imageGallery img:hover{  
-    transform: scale(1.8);
+    /* Style for the image */
+    .imageContainer img {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+        transition: 0.1s ease-in-out;
+    }
+
+        .imageContainer img:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+
+.gameContainer {
+    background-image: url("Images/Portfolio/BG_Games.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+/* Text container styling */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
 }
 
+    .textContainer h1 {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+        color: #ffd6b9;
+        font-family: 'cooper_blackregular';
+        font-weight: bold;
+    }
+
+    .textContainer p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1em;
+        margin: 0.5em 0;
+        color: #fff;
+    }
+
+/* Play button styling */
+.playButton {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+    .playButton i {
+        font-size: 20px; /* Make the icon smaller */
+        color: #fff; /* White icon color */
+    }
+
+    .playButton:hover {
+        background-color: #555; /* Change background on hover */
+    }
+
+    
 
 
+
+
+.imageContainer {
+    animation: fadeInScale 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.galleryContainer {
+    animation: fadeInScale 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0);
+}
+
+/*VIDEO PLAYER*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start with opacity 0 for animation */
+    transition: opacity 0.3s ease-out;
+}
+
+    /* Show the modal with a fade-in effect */
+    .modal.show {
+        opacity: 1;
+        animation: fadeIn 0.3s ease-out forwards;
+    }
+
+    /* Video zoom-in animation */
+    .modal video {
+        max-width: 90%;
+        max-height: 90%;
+        transform: scale(0.7); /* Start zoomed out */
+    }
+
+    .modal.show video {
+        animation: zoomIn 0.3s ease-out forwards;
+    }
+
+.backButton {
+    background-image: url("Images/ICO_Back.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E58638;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-size: 20px;
+    color: white;
+}
+
+    /* Hover effect */
+    .backButton:hover {
+        transform: scale(1.4);
+        background-color: #ffd6b9;
+    }
+
+/*** 
+Animations
+____________________________________________*/
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Fade-in animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(0.7);
+    }
+}
 
 
 

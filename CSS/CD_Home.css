@@ -236,7 +236,6 @@ article > h2 {
         margin: 0 auto;
     }
     body {
-        background-image: url("Images/BackgroundMain.png");
         background-repeat: no-repeat;
         background-size: auto 60%;
         background-color: black;
