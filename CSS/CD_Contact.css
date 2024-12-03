@@ -62,9 +62,9 @@ ____________________________________________*/
 li {
     display: inline;
 }
-.navItem a {
+a { 
     padding-left: 20px;
-    padding-right: 50px;
+    padding-right: 50px;  
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     font-style: italic;
@@ -73,18 +73,19 @@ li {
     transition: 0.3s;
 }
 
-    .navItem a:hover {
-        color: rgb(255, 207, 200);
-        font-weight: bolder;
-        letter-spacing: 0.1em;
-    }
+a:hover {
+    color: rgb(255, 207, 200);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
 
 /*** 
 Body Information
 ____________________________________________*/
 
 body {
-    background-color: #050708;
+    background-color: black;
+    
 }
 
 aside {
@@ -97,76 +98,74 @@ aside {
     width: 40%;
 }
 
-h2 {
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'cooper_blackregular';
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
-}
-
-
-section {
+form {
     width: 49%;
     float: left;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.selection {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 10px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+label {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
 }
 
-.boxed {
-    width: 400px;
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 70px;
+    border-radius: 18px;
+    background: white;
+}
+
+textarea {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    width: 100%;
     height: 200px;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    background-color: #16130E;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-bottom: 70px;
+    border-radius: 18px;
+    background: white;
 }
 
-    .boxed a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        color: white;
-        text-decoration: none;
+label::after{
+    content: " *";
+    color: red;
     }
 
-    .boxed p {
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        font-size: 40px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
+.left {
+    padding-right: 20px;
+    width: 45%;
+    float: left;
+}
+.right {
+    width: 48%;
+    float: right;
+}
 
-    .boxed i {
-        font-size: 60px;
-        color: white;
-    }
+.submitButton {
+    background-color: #EDBB98;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-style: normal;
+    transition: 0.2s;
+    
+}
 
-    .boxed:hover {
-        background-color: #3b2d1e;
-    }
-
-
-
+.submitButton:hover {
+    transform: scaleY(1.4);
+    background-color: #ffd6b9;
+    font-size: 43px;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+}
 
 
 
@@ -175,19 +174,11 @@ section {
         float: none;
         width: 100%;
     }
-    section {
+    form {
         width: 100%;
         float: none;
         margin-left: 0px;
         margin-top: 0px;
-    }
-    h2 {
-        font-size: 80px;
-    }
-
-    .selection {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-
     }
 
     
