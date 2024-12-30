@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-  @font-face {
+
+@font-face {
     font-family: 'cooper_blackregular';
     src: url('Fonts/coopbl-webfont.eot');
-    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/coopbl-webfont.woff') format('woff'),
-         url('Fonts/coopbl-webfont.ttf') format('truetype');
+    src: url('Fonts/coopbl-webfont.eot?#iefix') format('embedded-opentype'), url('Fonts/coopbl-webfont.woff') format('woff'), url('Fonts/coopbl-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,16 +39,14 @@ header {
     height: 120px;
     width: 100%;
     background: linear-gradient(90deg, rgba(255,66,42,1) 0%, rgba(255,180,127,1) 100%);
-    
 }
 
-header > img {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    height: 100%;
-    
-}
+    header > img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        height: 100%;
+    }
 
 
 /*** 
@@ -59,12 +56,14 @@ ____________________________________________*/
 .navBar {
     background-color: black;
 }
+
 li {
     display: inline;
 }
-a { 
+
+.navItem a {
     padding-left: 20px;
-    padding-right: 50px;  
+    padding-right: 50px;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     font-style: italic;
@@ -73,19 +72,18 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-    color: rgb(255, 207, 200);
-    font-weight: bolder;
-    letter-spacing: 0.1em;
-}
+    .navItem a:hover {
+        color: rgb(255, 207, 200);
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+    }
 
 /*** 
 Body Information
 ____________________________________________*/
 
 body {
-    background-color: black;
-    
+    background-color: #050708;
 }
 
 aside {
@@ -98,94 +96,111 @@ aside {
     width: 40%;
 }
 
-form {
+h2 {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'cooper_blackregular';
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+
+section {
     width: 49%;
     float: left;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-label {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 30px;
-    font-style: italic;
+.selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
-
-input {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 70px;
-    border-radius: 18px;
-    background: white;
-}
-
-textarea {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+.boxed {
     width: 100%;
     height: 200px;
-    margin-bottom: 70px;
-    border-radius: 18px;
-    background: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #16130E;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box;
 }
 
-label::after{
-    content: " *";
-    color: red;
+
+    .boxed a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: white;
+        text-decoration: none;
     }
 
-.left {
-    padding-right: 20px;
-    width: 45%;
-    float: left;
-}
-.right {
-    width: 48%;
-    float: right;
-}
+    .boxed p {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transition: color 0.3s, letter-spacing 0.3s, font-weight 0.3s;
+    }
 
-.submitButton {
-    background-color: #EDBB98;
-    height: 70px;
-    border-radius: 10px;
-    font-size: 40px;
-    font-style: normal;
-    transition: 0.2s;
-    
-}
+    .boxed i {
+        font-size: 60px;
+        color: white;
+        transition: transform 0.3s;
+    }
 
-.submitButton:hover {
-    transform: scaleY(1.4);
-    background-color: #ffd6b9;
-    font-size: 43px;
-    font-weight: bolder;
-    letter-spacing: 0.2em;
-}
+    .boxed:hover {
+        background-color: #3b2d1e;
+    }
+
+        .boxed:hover i {
+            transform: scale(1.2);
+        }
+
+        .boxed:hover p {
+            color: rgb(255, 207, 200);
+            font-weight: bolder;
+            letter-spacing: 0.1em;
+        }
 
 
 
-@media screen and (max-width: 990px){
+
+
+
+@media screen and (max-width: 990px) {
     aside {
         float: none;
         width: 100%;
     }
-    form {
+
+    section {
         width: 100%;
         float: none;
         margin-left: 0px;
         margin-top: 0px;
     }
 
-    
-    
+    h2 {
+        font-size: 80px;
+    }
+
+    .selection {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
-
-
-
-
-
